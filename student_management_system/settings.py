@@ -27,6 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-wmksv!3ca6sd=3g=!d(+(
 # CAPTCHA_SECRET_KEY = os.environ.get('CAPTCHA_SECRET_KEY', '6LeffG8pAAAAAHVy2ISvOKTCUnPMvA1lQf85ezG2')
 RECAPTCHA_PUBLIC_KEY = os.environ.get('RECAPTCHA_PUBLIC_KEY', '6LeffG8pAAAAALsRRv2S2z7cSGvfMs2cXZ7wGirU')
 RECAPTCHA_PRIVATE_KEY = os.environ.get('RECAPTCHA_PRIVATE_KEY', '6LeffG8pAAAAAHVy2ISvOKTCUnPMvA1lQf85ezG2')
+CAPTCHA_SECRET = os.environ.get('RECAPTCHA_PRIVATE_KEY', '6LeffG8pAAAAAHVy2ISvOKTCUnPMvA1lQf85ezG2')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
