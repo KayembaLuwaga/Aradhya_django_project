@@ -108,7 +108,8 @@ DATABASES = {
 }
 
 DATABASES['default'] = dj_database_url.config(default="sqlite:////os.path.join(BASE_DIR, 'db.sqlite3')")
-DATABASE_URL = os.environ.get('DATABASE_URL', os.path.join(BASE_DIR, 'db.sqlite3'))
+DATABASE_URL = os.environ.get('DATABASE_URL', DATABASES['default'])
+DB_URL = os.environ.get('DB_URL', DATABASES['default'])
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
